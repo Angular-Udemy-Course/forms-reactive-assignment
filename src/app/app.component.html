@@ -12,7 +12,7 @@
           <span
             *ngIf="!projectForm.get('projectName').valid && projectForm.get('projectName').touched"
             class="help-block">
-            <span *ngIf="projectForm.get('projectName').hasError('projectNameIsForbidden')">This name is invalid!</span>
+            <span *ngIf="projectForm.get('projectName').hasError('invalidProjectName')">This name is invalid!</span>
             <span *ngIf="projectForm.get('projectName').hasError('required')">This field is required!</span>
           </span>
         </div>
