@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
         [Validators.required, Validators.email]
       ),
       'projectStatus': new FormControl(
-        this.projectStatuses[0]
+        this.projectStatuses[1]
       )
     });
   }
